@@ -1,0 +1,202 @@
+.body{
+display: block;
+margin-left: 8%;
+margin-right: 8%;
+height: 100%;
+
+margin-bottom: 1%;
+
+}
+
+header{
+    display: flex;
+
+    padding:20px
+}
+header h1 {
+    font-size:5vw ;
+    text-justify: start;
+}
+header h6{
+    margin-top: -10px;
+    font-size:3vw ;
+    text-justify: start;
+    color: rgb(255, 0, 0);
+   
+}
+
+.svgImage {
+    width: 20vw;
+    padding: 20px 20px;
+}
+.conteinerButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+   
+}
+.conteinerTittle{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 37% 63%;
+
+}
+
+.buttonsPresentationProps{
+ 
+    margin: 5px;
+}
+.item2{
+  
+}
+.item{
+    display: flex;
+    flex-direction: column;
+
+   margin-top: -5%;
+  
+}
+.item3{
+display: flex;
+flex-direction: column;
+
+align-items: center;
+}
+.item3 h2{
+    width: 100%;
+    margin-left: 5%;
+    
+ 
+
+}
+.item3 h3 {
+    width: 100%;
+    margin-left: 5%;
+   
+} 
+@media screen and (max-width:600px) {
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+      
+      }
+      .conteinerButtons{
+        display: flex;
+        flex-direction:row;
+       
+    }
+    .body h3{
+        font-size: 3vw;
+    }
+    .body h2{
+        font-size: 4vw;
+    }
+}
+/*--------------------------------------------*/
+
+.conteinerExperience{
+display: grid;
+grid-template-columns: 37% 63%;
+
+}
+.conteinerExperience2{
+    display: grid;
+grid-template-columns: 63% 37%;
+
+}
+.conteinerExperience img{
+    width: 30vw;
+    height:10vw ;
+    margin-top: -10%;
+    margin-bottom: -10%;
+
+}
+.conteinerExperience h6{
+    text-align: center; 
+    font-size: 1.5vw;
+
+   
+    
+}
+.conteinerExperience h6 span {
+    color: red;
+}
+.conteinerExperience2 img{
+    width: 30vw;
+    height:10vw ;
+    margin-top: -10%;
+    margin-bottom: -10%;
+
+}
+.conteinerExperience2 h6{
+    text-align: center; 
+    font-size: 1.5vw;
+
+   
+    
+}
+.conteinerExperience2 h6 span {
+    color: red;
+}
+.tittles{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:890px) {
+    
+}
+
+/*----------------------------------- */
+.carousel {
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    animation: slideAnimation 17s linear infinite; /* Cambia la duración según desees */
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 400px; /* Ajusta el ancho según sea necesario */
+    margin-right: -190px;
+  
+  }
+
+
+  .slide svg {
+    width: 15vw;
+    height: 15vw;
+  
+  }
+  
+  @keyframes slideAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    
+    100%{
+        transform: translateX(-300%);
+    }
+  }
+  @media screen and (max-width:890px) {
+    .slide {
+        flex: 0 0 auto;
+        width: 400px; /* Ajusta el ancho según sea necesario */
+        margin-right: -300px;
+      }
+  }

@@ -1,0 +1,13 @@
+<img src="public\images\html5.png" alt="" />
+
+<object class="svg-images" data="public\images\HTML.svg" type="image/svg+xml"></object>
+
+
+rojo : #a4234b azul: #004b95
+
+
+
+    <h1>La sexta es inevitable</h1>
+    
+    <object class="svg-images" data="public\images\barca.svg" type="image/svg+xml"></object>
+
