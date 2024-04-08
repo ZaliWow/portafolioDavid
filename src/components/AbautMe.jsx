@@ -9,11 +9,11 @@ export function AbautMe({}){
         <div className="body">
 <header>
     <div>
-    <object className="svgImage" data="public\images\user-account-person-avatar-svgrepo-com.svg" type=""></object>
+    <object className="svgImage" data="images\user-account-person-avatar-svgrepo-com.svg" type=""></object>
     </div>
     <div>
     <div className="conteinerTittle">
-    <h6> -- Software Enginer</h6>
+    <h6> -- Software Engineer</h6>
          <h1>William David Morales Pineda</h1>    
     </div>
         
@@ -30,8 +30,8 @@ export function AbautMe({}){
     <div className="conteinerButtons">
     <div className="buttonsPresentationProps">
     <Button variant="dark"
-sx={{backgroundColor:'red', borderColor:'red', borderWidth:'2px', borderStyle:'solid', borderRadius:'10px'}}
->Check out my wordk!</Button>
+sx={{ borderColor:'red', borderWidth:'2px', borderStyle:'solid', borderRadius:'10px'}}
+>Check out my work!</Button>
     </div>
     <div className="buttonsPresentationProps">
     <Button variant="dark" 
