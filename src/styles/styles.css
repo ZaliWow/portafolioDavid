@@ -64,7 +64,7 @@ header h6{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    
    margin-top: -5%;
   
 }
@@ -99,6 +99,7 @@ align-items: center;
     }
     .body h3{
         font-size: 3vw;
+        
     }
     .body h2{
         font-size: 4vw;
@@ -119,7 +120,7 @@ grid-template-columns: 63% 37%;
 }
 .conteinerExperience img{
     align-items: end;
-    width: 25vw;
+    width: 20vw;
     height:10vw ;
     margin-top: -10%;
     margin-bottom: -10%;
@@ -154,7 +155,7 @@ grid-template-columns: 63% 37%;
 }
 .tittles{
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     display: flex;
     justify-content: center;
 }
@@ -184,9 +185,25 @@ grid-template-columns: 63% 37%;
             }
             .item h6{
                 width: 100%;
-               
+              
                 margin-left: 100px;
+                
      
+            }
+            .conteinerExperience2 img{
+                width: 40vw;
+                height:10vw ;
+                margin-top: -10%;
+                margin-bottom: -10%;
+            
+            }
+            .conteinerExperience img{
+                align-items: end;
+                width: 40vw;
+                height:10vw ;
+                margin-top: -10%;
+                margin-bottom: -10%;
+            
             }
 }
 
