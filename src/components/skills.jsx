@@ -3,7 +3,7 @@ export function Skills({}) {
         <div className="body">
 
 <h1 className="tittles">Skills</h1>
-
+<h4>these are some of the tools and frameworks i use</h4>
 <div class="carousel">
   <div class="slides">
     <div class="slide">

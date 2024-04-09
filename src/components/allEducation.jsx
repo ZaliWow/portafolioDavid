@@ -17,6 +17,11 @@ const [listOfEducation, setListOfEducation]=useState([{
     tittle:"Techinical accounting",
    university:"SENA", 
    image:"images/sena.png"
+},
+{
+    tittle:"Scrum Fundamentals Certified",
+   university:"SCRUMstudy", 
+   image:"images/scrumstudy.png"
 }
 
 
@@ -42,6 +47,11 @@ const [listOfEducation, setListOfEducation]=useState([{
                  tittle={listOfEducation[2].tittle}
                  university={listOfEducation[2].university}
                  image={listOfEducation[2].image}
+                ></Education>
+                 <Education
+                 tittle={listOfEducation[3].tittle}
+                 university={listOfEducation[3].university}
+                 image={listOfEducation[3].image}
                 ></Education>
             </div>
 

@@ -4,15 +4,17 @@ export function Education({tittle, university, image}) {
     return(
         <div className="body">
           
-            <header >
+            <div className="headerEducation" >
+<div>
 <img src={image} alt="" />
+</div>
 <div className="conteinerTittleEducation">
     <h6> -- {tittle}</h6>
          <h1>{university}</h1>    
     </div>
 
 
-            </header>
+            </div>
          
         </div>
     )

@@ -40,7 +40,7 @@ export function Navbar() {
   };
 
   return (
-    <AppBar position="static" elevation={0} sx={{backgroundColor:grey[100], color:'black'}}>
+    <AppBar position="fixed" elevation={0} sx={{backgroundColor:grey[100], color:'black'}}>
       <Container maxWidth="xl" >
         <Toolbar disableGutters >
           <JavascriptIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

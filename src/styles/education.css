@@ -1,24 +1,30 @@
 
+.headerEducation{
+    display: flex;
+
+    padding:20px
+}
 
 .headerEducation img{
-    width: 40vw;
+    width: 30vw;
     height:10vw ;
     
 }
 .headerEducation h1{
     margin: 0;
-    text-align: start;
-   justify-content: center;
-    background-color: blue;
+    text-align: center;
+    
+ font-size: 4vw;
     width: 100%;
     height: 100%;
 }
-.headerEducation h4{
+.headerEducation h6{
     margin:0;
     padding: 0;
     text-align: center;
     width: 100%;
-    background-color: rgb(224, 117, 117);
+    color: red;
+
 }
 .informationHeader{
     display: block;
