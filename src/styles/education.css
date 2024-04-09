@@ -1,0 +1,57 @@
+
+
+.headerEducation img{
+    width: 40vw;
+    height:10vw ;
+    
+}
+.headerEducation h1{
+    margin: 0;
+    text-align: start;
+   justify-content: center;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
+.headerEducation h4{
+    margin:0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(224, 117, 117);
+}
+.informationHeader{
+    display: block;
+    
+}
+.conteinerEducation{
+    display: grid;
+    grid-template-columns: 37% 63%;
+    
+    
+    }
+.itemEducation{
+    background-color: aquamarine;
+}
+.conteinerTittleEducation{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+}
+.conteinerTittleEducation h1{
+    font-size: 3vw;
+}
+.conteinerTittleEducation h6{
+    font-size: 2vw;
+}
+
+@media screen and (max-width:1000px) {
+
+    .headerEducation h1{
+        font-size: 3vw;
+    }
+}

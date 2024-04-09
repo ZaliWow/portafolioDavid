@@ -5,6 +5,8 @@ import { Experience } from "./components/experience"
 import { useState } from "react"
 import { AllExperience } from "./components/allExperience"
 import { Skills } from "./components/skills"
+import { Proyects } from "./components/proyects"
+import { AllEducation } from "./components/allEducation"
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
 <AbautMe></AbautMe>
 <AllExperience></AllExperience>
 <Skills></Skills>
+<Proyects></Proyects>
+<AllEducation></AllEducation>
 </>
     
   )
