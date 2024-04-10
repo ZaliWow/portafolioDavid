@@ -4,7 +4,7 @@ import "../styles/projects.css"
 
 
 
-export function Proyects({}) {
+export function Proyects({mode}) {
     const [listOfProyect, setListOfProyect] = useState([
         {
             tittle: "Backend Proyecto de grado",   
@@ -96,7 +96,7 @@ viewproyect:""}
 ])
 
     return(
-        <div className="body">
+        <div className="body" id="Projects">
             
         <h1 className="tittles">Projects</h1>
         <h4>These are some of my personal projects, which were made during my university career</h4>
@@ -136,7 +136,7 @@ viewproyect:""}
     <div className="section2">
     <div className="cardProject">
                 <ProjectsAbs
-             
+                mode={mode}
                 urlproyect={listOfProyect[2].urlproyect} 
                 presentation={listOfProyect[2].presentation}
                 avatar={listOfProyect[2].avatar} 
@@ -148,7 +148,7 @@ viewproyect:""}
             </div> 
             <div className="cardProject">
                 <ProjectsAbs 
-          
+          mode={mode}
                 urlproyect={listOfProyect[3].urlproyect} 
                 presentation={listOfProyect[3].presentation}
                 avatar={listOfProyect[3].avatar} 
@@ -162,7 +162,7 @@ viewproyect:""}
     <div className="section2">
             <div className="cardProject">
                 <ProjectsAbs
-                
+                mode={mode}
                 urlproyect={listOfProyect[5].urlproyect} 
                 presentation={listOfProyect[5].presentation}
                 avatar={listOfProyect[5].avatar} 
@@ -174,7 +174,7 @@ viewproyect:""}
             </div> 
             <div className="cardProject">
                 <ProjectsAbs
-              
+              mode={mode}
                 urlproyect={listOfProyect[6].urlproyect} 
                 presentation={listOfProyect[6].presentation}
                 avatar={listOfProyect[6].avatar} 

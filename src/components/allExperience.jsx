@@ -22,11 +22,12 @@ export function AllExperience({}) {
         }
     ])
 return(
-    <>
+    <div className="body" id="Experience">
     <h1 className="tittles">Experience</h1>
+    <h4>These are some jobs i have done</h4>
    <Experience typeReturn={true} company={listOfExperience[0].company}position={listOfExperience[0].position}startDate={listOfExperience[0].startDate} endDate={listOfExperience[0].endDate} image={listOfExperience[0].image} description={listOfExperience[0].description}></Experience>
    <Experience typeReturn={false} company={listOfExperience[1].company}position={listOfExperience[1].position}startDate={listOfExperience[1].startDate} endDate={listOfExperience[1].endDate} image={listOfExperience[1].image} description={listOfExperience[1].description}></Experience>
-   </>
+   </div>
 
    )    
 }

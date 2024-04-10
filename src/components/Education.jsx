@@ -2,7 +2,7 @@ import "../styles/education.css"
 export function Education({tittle, university, image}) {
 
     return(
-        <div className="body">
+        <div className="body" >
           
             <div className="headerEducation" >
 <div>

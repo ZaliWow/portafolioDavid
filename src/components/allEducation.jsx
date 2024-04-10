@@ -28,7 +28,7 @@ const [listOfEducation, setListOfEducation]=useState([{
 ])
 
     return(
-        <div className="body">
+        <div className="body" id="Education">
               <h1 className="tittles">Education and Certificates</h1>
             <h4>These are my academic degrees and education certificates</h4>
 

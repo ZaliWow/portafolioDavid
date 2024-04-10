@@ -4,9 +4,20 @@ import { Padding, PictureAsPdf } from "@mui/icons-material"
 
 
 
-export function AbautMe({}){
+export function AbautMe({mode}){
+
+     const handleDownloadCV = () =>{
+        const pdfUrl = "/achives/CV - William David Morales Pineda.pdf"
+        const link = document.createElement('a')
+        link.href= pdfUrl;
+        link.setAttribute('download', 'CV - William David Morales Pineda')
+        document.body.appendChild(link)
+        link.click();
+        document.body.removeChild(link)
+       
+     }
     return(
-        <div className="body">
+        <div className="body" id="Me">
 <header>
     <div>
     <object className="svgImage" data="images\user-account-person-avatar-svgrepo-com.svg" type=""></object>
@@ -29,15 +40,26 @@ export function AbautMe({}){
 
     <div className="conteinerButtons">
     <div className="buttonsPresentationProps">
-    <Button variant="dark"
+    <Button variant="dark" href="#Projects"
 sx={{ borderColor:'red', borderWidth:'2px', borderStyle:'solid', borderRadius:'10px'}}
 >Check out my work!</Button>
     </div>
     <div className="buttonsPresentationProps">
-    <Button variant="dark" 
+    {
+        mode ?
+        <Button variant="dark" 
+        onClick={handleDownloadCV}
 sx={{borderColor:'black', borderWidth:'2px', borderStyle:'solid', borderRadius:'10px',  display:"-ms-flexbox"}}>
     DL CV   <PictureAsPdf sx={{color:'red', padding:'0px 0px 0px 5px' }}></PictureAsPdf></Button>
 
+        : 
+        <Button variant="dark" 
+        onClick={handleDownloadCV}
+sx={{borderColor:'white', borderWidth:'2px', borderStyle:'solid', borderRadius:'10px',  display:"-ms-flexbox"}}>
+    DL CV   <PictureAsPdf sx={{color:'red', padding:'0px 0px 0px 5px' }}></PictureAsPdf></Button>
+
+    }
+    
     </div>
 
 </div>

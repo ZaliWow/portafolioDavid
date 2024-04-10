@@ -38,7 +38,7 @@ export function ProjectsAbs({ mode, herramientas, tittle, avatar, description, p
     
   }
 
-
+if (mode===true)
 return ( 
     <>
     <Card elevation={0} sx={{ fontFamily: 'monospace', backgroundColor:grey[100], maxWidth:300, minWidth:300,    color:'black'}} >
@@ -73,8 +73,42 @@ return (
     
     </>
   );
+  if (mode===false)
+  return ( 
+    <>
+    <Card elevation={0} sx={{ fontFamily: 'monospace', backgroundColor:'black', maxWidth:300, minWidth:300,    color:'white'}} >
+      <CardHeader
+      sx={{fontFamily: 'monospace'}}
+      avatar={<Avatar src={presentation}></Avatar>}    
+      title={tittle}  
+        
+      />
+      <CardMedia
 
+        component="img"
+        height="150"
+        width="200"
+       
+        image={avatar}
+        
+      />  
+      <CardActions disableSpacing>
+        <IconButton  sx={{color:'white'}}   >   
+        <LinkOutlined ></LinkOutlined>                
+        </IconButton>
+        <IconButton  sx={{color:'white'}}  >
+        <ViewAgenda></ViewAgenda>
+        </IconButton>
+        <IconButton sx={{color:'white'}}>
+      <Info ></Info>
+        </IconButton>
 
+      </CardActions>
+     
+    </Card>
+    
+    </>
+  );
 
 
 
