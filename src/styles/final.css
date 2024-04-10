@@ -1,11 +1,47 @@
 .boddyFinal{
     display: flex;
     width: 100%;
-    height: 5vw;
-    background-color: rgb(150, 152, 152);
+    height: 10vw;
+    background-color: rgb(121, 121, 121);
     color: white;
     margin-bottom: 0px;
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+.finalCopy{
+display: flex;
+width: 100%;
+
+padding: 10px;
+}
+.finalOptions{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding: 10px;
+    margin-right: 100px;
+}
+@media screen and (max-width:800px) {
+    .boddyFinal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 30vw;
+
+    }
+    .finalCopy{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+ 
+        }
+        .finalOptions{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-right: 0px;
+         
+        }
 }
