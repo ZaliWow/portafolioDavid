@@ -11,8 +11,6 @@ import { useState } from "react"
 function App() {
   const [mode, setMode] = useState(true)
   return (
-   
-    
 <>
 <Navbar mode={mode} setMode={setMode}></Navbar>
 <AbautMe mode={mode}></AbautMe>

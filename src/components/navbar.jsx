@@ -37,25 +37,15 @@ export function Navbar({mode, setMode}) {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
-
-
 const root = document.documentElement;
 
   const handleModeConfig = () => {
     if(mode===true)
-    {
-      
+    {      
       root.style.setProperty("--background-color", "black")
       root.style.setProperty("--color" , "white")
       setMode(false)
-
     }else if(mode===false){
-
       root.style.setProperty("--background-color", "#f5f5f5")
       root.style.setProperty("--color", "black")
       setMode(true)
@@ -72,7 +62,7 @@ const root = document.documentElement;
   }
   if(mode===true)
   return (
-    <AppBar position="fixed" elevation={0} sx={{backgroundColor: grey[100], color: 'black'}}>
+  <AppBar position="fixed" elevation={0} sx={{backgroundColor: grey[100], color: 'black'}}>
   <Container maxWidth="xl"  >
     <Toolbar disableGutters>
       <JavascriptIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -165,6 +155,7 @@ const root = document.documentElement;
         {pages.map((page) => (
       
           <Button
+          variant="dark"
             key={page}
             href={'#' + page }
             onClick={handleCloseNavMenu}

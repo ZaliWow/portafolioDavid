@@ -6,6 +6,11 @@ import { Padding, PictureAsPdf } from "@mui/icons-material"
 
 export function AbautMe({mode}){
 
+
+
+
+
+
      const handleDownloadCV = () =>{
         const pdfUrl = "/achives/CV - William David Morales Pineda.pdf"
         const link = document.createElement('a')
@@ -14,8 +19,10 @@ export function AbautMe({mode}){
         document.body.appendChild(link)
         link.click();
         document.body.removeChild(link)
-       
      }
+
+
+     
     return(
         <div className="body" id="Me">
 <header>

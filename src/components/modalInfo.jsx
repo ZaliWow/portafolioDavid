@@ -24,7 +24,7 @@ const style = {
 
 
 
-export  function ModalInfo({tools, avatar, open, setOpen, tittle, description}) {
+export  function ModalInfo({urlproyect, tools, avatar, open, setOpen, tittle, description}) {
 
   const handleClose = () => setOpen(false);
   const handleLinkProyect = ()=> {
@@ -52,7 +52,7 @@ export  function ModalInfo({tools, avatar, open, setOpen, tittle, description}) 
 
     component="img"
    sx={{ height:{xs:'40vw', md:'20vw'},
-   width:{xs:'90vw', md:'70vw'}}}
+         width:{xs:'90vw', md:'70vw'}}}
     image={avatar}
 
 />  
