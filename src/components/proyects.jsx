@@ -14,7 +14,6 @@ export function Proyects({mode}) {
             urlproyect:"https://github.com/ZaliWow/pa-graduarme-backend",
             herramientas:"NodeJS, ExpressJSX, Postgress",
             viewproyect:"https://proyecto-backend-william-david-morales.onrender.com/registro/estudiantes"
-
 },
 {
     
@@ -31,7 +30,7 @@ export function Proyects({mode}) {
     tittle:"Frontend Proyecto de grado",
     avatar:"images/proyecto.PNG",
     presentation:"images/react.svg",
-    urlproyect:"https://firebasestorage.googleapis.com/v0/b/bdd-proyecto-grado.appspot.com/o/proyecto.PNG?alt=media&token=61e1029d-b959-4d9e-845d-df23e3b34f05",
+    urlproyect:"https://github.com/ZaliWow/Pa-graduarme",
     description:"Proyecto web 100% responsivo donde permite a los usuarios estudiantes repasar matematicas y a los usuarios docentes controlar completamente el entorno de los estudiantes",
     herramientas:"ReactJS + ViteJS, React + Bootstrap",
     viewproyect:"https://proyecto-william-david-morales.netlify.app/"
@@ -39,7 +38,7 @@ export function Proyects({mode}) {
  {tittle:"Frontend Univalletify",
     avatar:"/images/univalletify.png",
     presentation:"images/react.svg",
-    urlproyect:"https://firebasestorage.googleapis.com/v0/b/bdd-proyecto-grado.appspot.com/o/proyecto.PNG?alt=media&token=61e1029d-b959-4d9e-845d-df23e3b34f05",
+    urlproyect:"",
     description:"Proyecto web donde los usuarios pueden subir canciones y ver canciones que otros usuarios subieron previamente, dando la posibilidad de añadirlas a un playlist de  canciones que te gustan.",
     herramientas:"ReactJS + ViteJS, React + Bootstrap",
     viewproyect:""
@@ -57,18 +56,18 @@ viewproyect:""
     avatar:"images/kasaklaus.jpg",
     presentation:"images/figma.svg",
     urlproyect:"https://www.figma.com/file/sjGYfmcx4zRUyqA6YMKCkV/Untitled?type=design&node-id=0%3A1&mode=design&t=nBzACp34yDXrW3Qq-1",
-description:"Aplicación web, diseño móvil para brindar a los usuarios el menú de un restaurante y que desde la página web envien mensajes por whatsapp",
-herramientas:"Figma, Canva",
-viewproyect:""
+    description:"Aplicación web, diseño móvil para brindar a los usuarios el menú de un restaurante y que desde la página web envien mensajes por whatsapp",
+    herramientas:"Figma, Canva",
+    viewproyect:""
 },
  {
     tittle:"Figma Movie Valey 2.0",
     avatar:"images/Movie valey.png",
     presentation:"images/figma.svg",
     urlproyect:"https://www.figma.com/file/qhGmPhTCZI36OrsqBNf3fx/Untitled?type=design&node-id=0%3A1&mode=design&t=vS9QuXOImbBUo3LH-1",
-description:"Diseño de aplicativo móvil, aplicación para ver y compartir peliculas." ,
-herramientas:"Figma, Canva",
-viewproyect:""
+    description:"Diseño de aplicativo móvil, aplicación para ver y compartir peliculas." ,
+    herramientas:"Figma, Canva",
+    viewproyect:"https://www.figma.com/file/qhGmPhTCZI36OrsqBNf3fx/Untitled?type=design&node-id=0%3A1&mode=design&t=vS9QuXOImbBUo3LH-1"
 },
  {
     tittle:"Figma Remember's GradeKeepers",
@@ -106,7 +105,7 @@ viewproyect:""}
     <div className="section2">
                 <div className="cardProject">
                 <ProjectsAbs
-                
+                mode={mode}
               
                 urlproyect={listOfProyect[0].urlproyect} 
                 presentation={listOfProyect[0].presentation}
@@ -119,7 +118,7 @@ viewproyect:""}
                 </div>
                 <div className="cardProject">
                 <ProjectsAbs
-                
+                mode={mode}
                 urlproyect={listOfProyect[1].urlproyect}  
                 presentation={listOfProyect[1].presentation} 
                 avatar={listOfProyect[1].avatar} 

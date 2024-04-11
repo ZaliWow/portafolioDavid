@@ -72,7 +72,7 @@ const root = document.documentElement;
   }
   if(mode===true)
   return (
-    <AppBar position="fixed"  sx={{backgroundColor: grey[100], color: 'black'}}>
+    <AppBar position="fixed" elevation={0} sx={{backgroundColor: grey[100], color: 'black'}}>
   <Container maxWidth="xl"  >
     <Toolbar disableGutters>
       <JavascriptIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -198,7 +198,7 @@ const root = document.documentElement;
 ---------------------------------------------------------------                           */
   else if(mode===false)
   return (
-    <AppBar position="fixed"  sx={{backgroundColor: 'black', color: 'white'}}>
+    <AppBar position="fixed" elevation={0} sx={{backgroundColor: 'black', color: 'white'}}>
   <Container maxWidth="xl"  >
     <Toolbar disableGutters>
       <JavascriptIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

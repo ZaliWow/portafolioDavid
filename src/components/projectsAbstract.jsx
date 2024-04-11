@@ -13,9 +13,12 @@ import { grey } from '@mui/material/colors';
 import { LinkOutlined } from '@mui/icons-material';
 import { ViewAgenda } from '@mui/icons-material';
 import { Info } from '@mui/icons-material';
-
+import { useState } from 'react';
+import { ModalInfo } from './modalInfo';
 
 const ExpandMore = styled((props) => {
+
+
   const { expand, ...other } = props;
   return <IconButton sx={{color:'white'}} {...other} />;
 })(({ theme, expand }) => ({
@@ -28,16 +31,19 @@ const ExpandMore = styled((props) => {
 
 export function ProjectsAbs({ mode, herramientas, tittle, avatar, description, presentation, urlproyect, viewproyect}) {
   const [expanded, setExpanded] = React.useState(false);
-  const [show, setShow] = React.useState(false);
-
+  const [open, setOpen] = useState(false);
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
   const handleLinkProyect = ()=> {
+    if(urlproyect!== "")
     window.open(urlproyect, '_blank');
     
   }
-
+  const handleViewProject= ()=> {
+    window.open(viewproyect, '_blank');
+  }
+  const handleOpen = () => setOpen(true);
 if (mode===true)
 return ( 
     <>
@@ -57,20 +63,20 @@ return (
         
       />  
       <CardActions disableSpacing>
-        <IconButton  sx={{color:'black'}}   >   
+        <IconButton onClick={handleViewProject} sx={{color:'black'}}   >   
         <LinkOutlined ></LinkOutlined>                
         </IconButton>
-        <IconButton  sx={{color:'black'}}  >
+        <IconButton onClick={handleLinkProyect} sx={{color:'black'}}  >
         <ViewAgenda></ViewAgenda>
         </IconButton>
-        <IconButton sx={{color:'black'}}>
+        <IconButton onClick={handleOpen} sx={{color:'black'}}>
       <Info ></Info>
         </IconButton>
 
       </CardActions>
      
     </Card>
-    
+    <ModalInfo open={open} setOpen={setOpen} tittle={tittle} description={description}></ModalInfo>
     </>
   );
   if (mode===false)
@@ -93,20 +99,20 @@ return (
         
       />  
       <CardActions disableSpacing>
-        <IconButton  sx={{color:'white'}}   >   
+      <IconButton onClick={handleViewProject} sx={{color:'white'}}   >   
         <LinkOutlined ></LinkOutlined>                
         </IconButton>
-        <IconButton  sx={{color:'white'}}  >
+        <IconButton onClick={handleLinkProyect} sx={{color:'white'}}  >
         <ViewAgenda></ViewAgenda>
         </IconButton>
-        <IconButton sx={{color:'white'}}>
+        <IconButton onClick={handleOpen} sx={{color:'white'}}>
       <Info ></Info>
         </IconButton>
 
       </CardActions>
      
     </Card>
-    
+    <ModalInfo open={open} setOpen={setOpen} tittle={tittle} description={description}></ModalInfo>
     </>
   );
 

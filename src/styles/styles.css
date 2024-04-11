@@ -20,6 +20,7 @@ margin-top: 5%;
 @media screen and (max-width:600px) {
     .body{
         margin-top: 20%;
+      
     }
 }
 .body h1{
