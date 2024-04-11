@@ -29,7 +29,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export function ProjectsAbs({ mode, herramientas, tittle, avatar, description, presentation, urlproyect, viewproyect}) {
+export function ProjectsAbs({ tools, mode, herramientas, tittle, avatar, description, presentation, urlproyect, viewproyect}) {
   const [expanded, setExpanded] = React.useState(false);
   const [open, setOpen] = useState(false);
   const handleExpandClick = () => {
@@ -76,7 +76,7 @@ return (
       </CardActions>
      
     </Card>
-    <ModalInfo open={open} setOpen={setOpen} tittle={tittle} description={description}></ModalInfo>
+    <ModalInfo tools={tools} avatar={avatar} open={open} setOpen={setOpen} tittle={tittle} description={description}></ModalInfo>
     </>
   );
   if (mode===false)
@@ -112,7 +112,7 @@ return (
       </CardActions>
      
     </Card>
-    <ModalInfo open={open} setOpen={setOpen} tittle={tittle} description={description}></ModalInfo>
+    <ModalInfo tools={tools}  avatar={avatar} open={open} setOpen={setOpen} tittle={tittle} description={description}></ModalInfo>
     </>
   );
 
