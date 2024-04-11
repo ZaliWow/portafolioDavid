@@ -36,7 +36,7 @@ export function ProjectsAbs({ tools, mode, herramientas, tittle, avatar, descrip
     setExpanded(!expanded);
   };
   const handleLinkProyect = ()=> {
-    if(urlproyect!== "")
+ 
     window.open(urlproyect, '_blank');
     
   }
@@ -76,7 +76,7 @@ return (
       </CardActions>
      
     </Card>
-    <ModalInfo tools={tools} avatar={avatar} open={open} setOpen={setOpen} tittle={tittle} description={description}></ModalInfo>
+    <ModalInfo  urlproyect={urlproyect} tools={tools} avatar={avatar} open={open} setOpen={setOpen} tittle={tittle} description={description}></ModalInfo>
     </>
   );
   if (mode===false)
@@ -112,7 +112,7 @@ return (
       </CardActions>
      
     </Card>
-    <ModalInfo tools={tools}  avatar={avatar} open={open} setOpen={setOpen} tittle={tittle} description={description}></ModalInfo>
+    <ModalInfo urlproyect={urlproyect} tools={tools}  avatar={avatar} open={open} setOpen={setOpen} tittle={tittle} description={description}></ModalInfo>
     </>
   );
 

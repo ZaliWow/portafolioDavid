@@ -15,7 +15,9 @@
     display: flex;
 }
 .cardProject{
-    margin:20px
+    margin-top:20px;
+    margin-left: 100px;
+    margin-Right: 100px;
     
 }
 @media screen and (max-width:650px) {

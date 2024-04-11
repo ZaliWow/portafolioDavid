@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import CardMedia from '@mui/material/CardMedia';
+import { GitHub } from '@mui/icons-material';
 
 
 
@@ -21,14 +22,20 @@ const style = {
 
 };
 
+
+
 export  function ModalInfo({tools, avatar, open, setOpen, tittle, description}) {
 
   const handleClose = () => setOpen(false);
-
+  const handleLinkProyect = ()=> {
+    if(urlproyect!== "")
+    window.open(urlproyect, '_blank');
+    
+  }
   return (
-    <div>
-      <button>{tools}</button>
-
+    <div >
+     
+    
       <Modal
         open={open}
         onClose={handleClose}
@@ -36,11 +43,16 @@ export  function ModalInfo({tools, avatar, open, setOpen, tittle, description}) 
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
+
+          <Button onClick={handleLinkProyect} style={{position:'absolute', top:'-20px', right:'10vw', backgroundColor:'red', color:'white'}}>
+            <GitHub></GitHub>
+          </Button>
+
         <CardMedia
 
     component="img"
-   sx={{ height:{xs:'30vw', md:'20vw'},
-   width:{xs:'50vw', md:'70vw'}}}
+   sx={{ height:{xs:'40vw', md:'20vw'},
+   width:{xs:'90vw', md:'70vw'}}}
     image={avatar}
 
 />  
@@ -51,7 +63,7 @@ export  function ModalInfo({tools, avatar, open, setOpen, tittle, description}) 
             {description}
           </Typography>
           
-          <Box sx={{display:{sx:'block',md:'flex'}}}>
+          <Box sx={{display:'flex'}}>
           
           {tools.map((tool) => (
       <Typography id={tool} sx={{ '& span':{color:'red'} , mt: 2, fontSize:{xs:"2vw" , md:"1vw"},  p: 2}}>
