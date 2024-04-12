@@ -63,13 +63,13 @@ return (
         
       />  
       <CardActions disableSpacing>
-        <IconButton onClick={handleViewProject} sx={{color:'black'}}   >   
+        <IconButton title="View Project" onClick={handleViewProject} sx={{color:'black'}}   >   
         <LinkOutlined ></LinkOutlined>                
         </IconButton>
-        <IconButton onClick={handleLinkProyect} sx={{color:'black'}}  >
+        <IconButton title="Repository"  onClick={handleLinkProyect} sx={{color:'black'}}  >
         <ViewAgenda></ViewAgenda>
         </IconButton>
-        <IconButton onClick={handleOpen} sx={{color:'black'}}>
+        <IconButton title="Information Project"  onClick={handleOpen} sx={{color:'black'}}>
       <Info ></Info>
         </IconButton>
 
@@ -99,13 +99,13 @@ return (
         
       />  
       <CardActions disableSpacing>
-      <IconButton onClick={handleViewProject} sx={{color:'white'}}   >   
+      <IconButton title="View Project" onClick={handleViewProject} sx={{color:'white'}}   >   
         <LinkOutlined ></LinkOutlined>                
         </IconButton>
-        <IconButton onClick={handleLinkProyect} sx={{color:'white'}}  >
+        <IconButton title="Repository"  onClick={handleLinkProyect} sx={{color:'white'}}  >
         <ViewAgenda></ViewAgenda>
         </IconButton>
-        <IconButton onClick={handleOpen} sx={{color:'white'}}>
+        <IconButton title="Information Project"  onClick={handleOpen} sx={{color:'white'}}>
       <Info ></Info>
         </IconButton>
 

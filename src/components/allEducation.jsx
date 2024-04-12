@@ -11,7 +11,7 @@ const [listOfEducation, setListOfEducation]=useState([{
 {
     tittle:"Technical bachelor",
    university:"I.E Eleazar Libreros Salamanca", 
-   image:"images/iels.jpg"
+   image:"images/iels.png"
 },
 {
     tittle:"Techinical accounting",

@@ -18,6 +18,7 @@ import  JavascriptIcon  from '@mui/icons-material/Javascript';
 import { WbSunny } from '@mui/icons-material';
 import { LinkedIn } from '@mui/icons-material';
 import { GitHub } from '@mui/icons-material';
+import { useEffect } from 'react';
 
 
 const pages = ['Me', 'Skills', 'Projects', 'Education', 'Experience']; 
@@ -45,10 +46,15 @@ const root = document.documentElement;
       root.style.setProperty("--background-color", "black")
       root.style.setProperty("--color" , "white")
       setMode(false)
+
+     
+
+
     }else if(mode===false){
       root.style.setProperty("--background-color", "#f5f5f5")
       root.style.setProperty("--color", "black")
       setMode(true)
+     
     }
 
   }
@@ -165,17 +171,17 @@ const root = document.documentElement;
           </Button>
         ))}
       </Box>
-       <Tooltip title="Swap Mode" >
-       <IconButton onClick={handleLinkedin} sx={{ p: 0 , marginLeft:'10px'}}>
+       <Tooltip  >
+       <IconButton title="Linkedin"  onClick={handleLinkedin} sx={{ p: 0 , marginLeft:'10px'}}>
             <LinkedIn  sx={{ color: 'black' }} />
           </IconButton> 
-          <IconButton onClick={handleGithub} sx={{ p: 0 , marginLeft:'10px'}}>
+          <IconButton title="GitHub"  onClick={handleGithub} sx={{ p: 0 , marginLeft:'10px'}}>
             <GitHub  sx={{ color: 'black' }} />
           </IconButton>
          
-          <IconButton onClick={handleModeConfig} sx={{ p: 0 , marginLeft:'10px'}}>
+          <IconButton title="Swap Mode" onClick={handleModeConfig} sx={{ p: 0 , marginLeft:'10px'}}>
             
-            <DarkMode sx={{ color: 'red' }} />
+            <DarkMode  sx={{ color: 'red' }} />
           </IconButton>
           
         </Tooltip>

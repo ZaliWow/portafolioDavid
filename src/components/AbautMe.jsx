@@ -4,7 +4,7 @@ import { Padding, PictureAsPdf } from "@mui/icons-material"
 
 
 
-export function AbautMe({mode}){
+export function AbautMe({mode, visit}){
 
 
 
@@ -72,7 +72,7 @@ sx={{borderColor:'white', borderWidth:'2px', borderStyle:'solid', borderRadius:'
 </div>
 <div className="item2">
     <h3>
-    Hi! I'm David, Software Engineer with a strong background in programming, but also with skills such as teamwork, requerimients gathering and understanding, personnel management and customer service.
+    Hi! <span>{visit}</span> I'm David, Software Engineer with a strong background in programming, but also with skills such as teamwork, requerimients gathering and understanding, personnel management and customer service.
 
     </h3>
     </div>

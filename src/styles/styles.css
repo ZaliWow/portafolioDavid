@@ -33,7 +33,11 @@ margin-top: 5%;
 .body h3{
     text-align: justify;
     
+    
+    
 }
+
+
 .body h4{
     text-align: center;
   margin-top: -8%;
@@ -92,6 +96,9 @@ header img{
   grid-template-columns: 37% 63%;
 
 }
+.content h3 span {
+    color:red;
+}
 
 .buttonsPresentationProps{
   
@@ -100,6 +107,10 @@ header img{
 .item2{
   
 }
+.item2  {
+color:'red'
+}
+
 .item{
     display: flex;
     flex-direction: column;
