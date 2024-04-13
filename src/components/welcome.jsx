@@ -57,7 +57,9 @@ export  function ModalWelcome({openWelcome, setOpenWelcome, setVisit}) {
           </Typography>
 
           <Input ref={visitRef} onKeyDown={handleKeyPress} variant="Outline" label="Filled" sx={{alignItems:'center', justifyContent:'center', color:'white', width:{xs:'90%',md:'98%'}, border:'1px solid red', m:1, }}></Input>
-    
+          <Typography id="modal-modal-description" sx={{ mt: 2,'& span':{color:'red'}, fontSize:{xs:"4vw" , md:"1vw"},  p: 2}}>
+            please, press 'Enter'
+          </Typography>
           
         </Box>
       </Modal>
