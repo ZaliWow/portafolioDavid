@@ -19,9 +19,10 @@ import { WbSunny } from '@mui/icons-material';
 import { LinkedIn } from '@mui/icons-material';
 import { GitHub } from '@mui/icons-material';
 import { useEffect } from 'react';
+import { WhatsAppButton } from './WhatsappButton';
 
 
-const pages = ['Me', 'Skills', 'Projects', 'Education', 'Experience']; 
+const pages = ['Me', 'Skills', 'Projects', 'Education', 'Experience'];  
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export function Navbar({mode, setMode}) {
@@ -172,6 +173,7 @@ const root = document.documentElement;
         ))}
       </Box>
        <Tooltip  >
+        <WhatsAppButton></WhatsAppButton>
        <IconButton title="Linkedin"  onClick={handleLinkedin} sx={{ p: 0 , marginLeft:'10px'}}>
             <LinkedIn  sx={{ color: 'black' }} />
           </IconButton> 
@@ -300,6 +302,7 @@ const root = document.documentElement;
         ))}
       </Box>
        <Tooltip title="Swap Mode" >
+       <WhatsAppButton></WhatsAppButton>
        <IconButton onClick={handleLinkedin} sx={{ p: 0 , marginLeft:'10px'}}>
             <LinkedIn  sx={{ color: 'white' }} />
           </IconButton> 

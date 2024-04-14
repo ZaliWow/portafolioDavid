@@ -8,6 +8,7 @@ import { AllEducation } from "./components/allEducation"
 import { Final } from "./components/final"
 import { useState, useEffect } from "react"
 import { ModalWelcome } from "./components/welcome"
+import { WhatsAppButton } from "./components/WhatsappButton"
 
 
 
@@ -29,6 +30,9 @@ function App() {
      return storeMode ? JSON.parse(storeMode) : false;
   
   });
+
+
+
   const root = document.documentElement;
   useEffect(()=> {
     localStorage.setItem('mode', JSON.stringify(mode))
@@ -43,6 +47,8 @@ function App() {
   }, [mode])
 
 
+
+  
    useEffect(()=> {
     localStorage.setItem('visit', JSON.stringify(visit))
    
@@ -63,6 +69,7 @@ function App() {
 <ModalWelcome openWelcome={openWelcome} setOpenWelcome={setOpenWelcome} setVisit={setVisit}></ModalWelcome>
 <Navbar mode={mode} setMode={setMode}></Navbar>
 <AbautMe mode={mode} visit={visit}></AbautMe>
+<WhatsAppButton ></WhatsAppButton>
 <AllExperience></AllExperience>
 <Skills mode={mode}></Skills>
 <Proyects mode={mode}></Proyects>
