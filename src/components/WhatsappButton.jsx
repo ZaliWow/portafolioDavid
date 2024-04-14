@@ -9,10 +9,10 @@ import { IconButton } from "@mui/material";
 
   // Función para abrir la ventana de WhatsApp con el mensaje predefinido
   const sendMessage = () => {
-    // Reemplaza el '+' con '00' si es un número internacional
-    const whatsappNumber = phoneNumber.startsWith('+') ? phoneNumber.replace('+', '00') : phoneNumber;
+  
+
     // Construye la URL de WhatsApp con el número y el mensaje
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     // Abre la URL en una nueva pestaña
     window.open(url, '_blank');
   };
