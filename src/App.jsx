@@ -69,7 +69,7 @@ function App() {
 <ModalWelcome openWelcome={openWelcome} setOpenWelcome={setOpenWelcome} setVisit={setVisit}></ModalWelcome>
 <Navbar mode={mode} setMode={setMode}></Navbar>
 <AbautMe mode={mode} visit={visit}></AbautMe>
-<WhatsAppButton ></WhatsAppButton>
+<WhatsAppButton mode={mode}></WhatsAppButton>
 <AllExperience></AllExperience>
 <Skills mode={mode}></Skills>
 <Proyects mode={mode}></Proyects>

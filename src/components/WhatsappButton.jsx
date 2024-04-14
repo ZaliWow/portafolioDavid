@@ -6,7 +6,7 @@ import "../styles/whatsapp.css"
 
 
 
- export function WhatsAppButton() {
+ export function WhatsAppButton({mode}) {
 
   const handleGithub = () => {
     window.open("https://github.com/ZaliWow", '_blank');
@@ -32,11 +32,18 @@ import "../styles/whatsapp.css"
     window.open(url, '_blank');
   };
 
-  return (
+  if (mode===true)return (
     <div className="bodyWhatsapp">
-    <IconButton onClick={sendMessage}><WhatsApp sx={{color:'green',}}></WhatsApp></IconButton>
-    <IconButton onClick={handleGithub}><GitHub sx={{color:'red',}} ></GitHub></IconButton>
-    <IconButton  onClick={handleLinkedin}><LinkedIn sx={{color:'blue',}}></LinkedIn></IconButton>
+    <IconButton onClick={sendMessage}><WhatsApp sx={{color:'black', }}></WhatsApp></IconButton>
+    <IconButton onClick={handleGithub}><GitHub sx={{color:'black',}} ></GitHub></IconButton>
+    <IconButton  onClick={handleLinkedin}><LinkedIn sx={{color:'black',}}></LinkedIn></IconButton>
     </div>
   );
+  if (mode===false)return(
+    <div className="bodyWhatsapp">
+    <IconButton onClick={sendMessage}><WhatsApp sx={{color:'white',}}></WhatsApp></IconButton>
+    <IconButton onClick={handleGithub}><GitHub sx={{color:'white',}} ></GitHub></IconButton>
+    <IconButton  onClick={handleLinkedin}><LinkedIn sx={{color:'white',}}></LinkedIn></IconButton>
+    </div>
+  )
 }
