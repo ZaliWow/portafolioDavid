@@ -1,5 +1,8 @@
 import { WhatsApp } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
+import "../styles/whatsapp.css"
+
+
 
  export function WhatsAppButton() {
   // Número de teléfono al que deseas enviar el mensaje
@@ -18,6 +21,8 @@ import { IconButton } from "@mui/material";
   };
 
   return (
+    <div className="bodyWhatsapp">
     <IconButton onClick={sendMessage}><WhatsApp sx={{color:'green'}}></WhatsApp></IconButton>
+    </div>
   );
 }

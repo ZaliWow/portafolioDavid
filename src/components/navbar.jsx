@@ -173,7 +173,7 @@ const root = document.documentElement;
         ))}
       </Box>
        <Tooltip  >
-        <WhatsAppButton></WhatsAppButton>
+      
        <IconButton title="Linkedin"  onClick={handleLinkedin} sx={{ p: 0 , marginLeft:'10px'}}>
             <LinkedIn  sx={{ color: 'black' }} />
           </IconButton> 
@@ -302,7 +302,7 @@ const root = document.documentElement;
         ))}
       </Box>
        <Tooltip title="Swap Mode" >
-       <WhatsAppButton></WhatsAppButton>
+      
        <IconButton onClick={handleLinkedin} sx={{ p: 0 , marginLeft:'10px'}}>
             <LinkedIn  sx={{ color: 'white' }} />
           </IconButton> 
