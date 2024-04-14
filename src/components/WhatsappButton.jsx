@@ -1,10 +1,22 @@
 import { WhatsApp } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
+import { GitHub } from "@mui/icons-material";
+import { LinkedIn } from "@mui/icons-material";
 import "../styles/whatsapp.css"
 
 
 
  export function WhatsAppButton() {
+
+  const handleGithub = () => {
+    window.open("https://github.com/ZaliWow", '_blank');
+  }
+  const handleLinkedin = () => {
+
+    window.open("https://www.linkedin.com/in/william-david-morales-pineda-551589249/", '_blank');
+     
+  }
+
   // Número de teléfono al que deseas enviar el mensaje
   const phoneNumber = '+573108310792';
   // Mensaje que deseas enviar
@@ -22,7 +34,9 @@ import "../styles/whatsapp.css"
 
   return (
     <div className="bodyWhatsapp">
-    <IconButton onClick={sendMessage}><WhatsApp sx={{color:'green'}}></WhatsApp></IconButton>
+    <IconButton onClick={sendMessage}><WhatsApp sx={{color:'green',}}></WhatsApp></IconButton>
+    <IconButton onClick={handleGithub}><GitHub sx={{color:'red',}} ></GitHub></IconButton>
+    <IconButton  onClick={handleLinkedin}><LinkedIn sx={{color:'blue',}}></LinkedIn></IconButton>
     </div>
   );
 }
