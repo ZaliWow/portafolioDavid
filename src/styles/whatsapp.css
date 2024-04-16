@@ -1,7 +1,6 @@
 .bodyWhatsapp{
     display: flex;
     flex-direction: column;
-    position: absolute;
     position: fixed;
     bottom:8vw;
     right: 1vw;

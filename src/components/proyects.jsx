@@ -81,7 +81,7 @@ export function Proyects({mode}) {
             
         <h1 className="tittles">Projects</h1>
         <h4>These are some of my personal projects, which were made during my university career</h4>
-        <h1>{listOfProyect[0].tools}</h1>
+    
         <div className="conteinerProjects">
             <div className="section1">
     <div className="section2">
