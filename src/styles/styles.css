@@ -66,11 +66,23 @@ header img{
     height: 10vw;
  
 }
-
-.svgImage {
+.body-svg{
     width: 20vw;
     padding: 20px 20px;
+}
+.body-svg svg {
+    width: 20vw;
+    height: 20vw;
 
+}
+.body-svg-dark{
+    width: 20vw;
+    padding: 20px 20px;
+}
+.body-svg-dark svg{
+    width: 20vw;
+    height: 20vw;
+    fill: white;
 }
 .conteinerButtons{
     display: flex;

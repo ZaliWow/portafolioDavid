@@ -20,7 +20,7 @@ import "../styles/whatsapp.css"
 
 
   // Número de teléfono al que deseas enviar el mensaje
-  const phoneNumber = '+57Your number here';
+  const phoneNumber = '+573108310792';
   // Mensaje que deseas enviar
   const message = '¡Hola! ¿Cómo estás?';
 
