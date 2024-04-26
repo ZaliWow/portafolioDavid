@@ -1,4 +1,3 @@
-import { Description } from "@mui/icons-material";
 
 
 export function Experience ({startDate, endDate,description,image, position,company, typeReturn}){

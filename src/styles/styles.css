@@ -69,20 +69,26 @@ header img{
 .body-svg{
     width: 20vw;
     padding: 20px 20px;
-}
-.body-svg svg {
-    width: 20vw;
-    height: 20vw;
 
+
+}
+.body-svg img {
+    width: 25vw;
+    height: 25vw;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
 }
 .body-svg-dark{
     width: 20vw;
     padding: 20px 20px;
 }
-.body-svg-dark svg{
-    width: 20vw;
-    height: 20vw;
-    fill: white;
+.body-svg-dark img{
+    width: 25vw;
+    height: 25vw;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
 }
 .conteinerButtons{
     display: flex;

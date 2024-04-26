@@ -27,20 +27,12 @@ export function AbautMe({mode, visit}){
         <div className="body" id="Me">
 <header>
     <div className={mode ? "body-svg" : "body-svg-dark"}>
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" xml:space="preserve" width="800px" height="800px" fill="#000000">
-
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-
-<g id="SVGRepo_iconCarrier"> <style type="text/css">
-</style> <path class="st4" d="M24,28H6c-1.1,0-2-0.9-2-2v0c0-3.9,3.1-7,7-7h8c3.9,0,7,3.1,7,7v0C26,27.1,25.1,28,24,28z"/> <circle class="st14" cx="15" cy="9" r="6"/> 
-</g>
-</svg> 
+    <img src="images\profile-image.png" alt="" />
 </div>
     <div>
     <div className="conteinerTittle">
-    <h6> -- Software Engineer</h6>
+        
+    <h6> -- Software Engineer | Frontend React</h6>
          <h1>William David Morales Pineda</h1>    
     </div>
         

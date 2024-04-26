@@ -9,6 +9,7 @@ import { Final } from "./components/final"
 import { useState, useEffect } from "react"
 import { ModalWelcome } from "./components/welcome"
 import { WhatsAppButton } from "./components/WhatsappButton"
+import { Dreams } from "./components/Dreams"
  
 
 
@@ -74,6 +75,7 @@ function App() {
 <Skills mode={mode}></Skills>
 <Proyects mode={mode}></Proyects>
 <AllEducation></AllEducation>
+<Dreams></Dreams>
 <Final></Final>
 </>
   )
